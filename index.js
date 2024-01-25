@@ -8,7 +8,8 @@ const characters = [
     "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d",
     "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
     "o", "p", "q", "r", "s", "t", "u", "v", "w", "x",
-    "y", "z", "!", "@", "#", "%", "&", "*",
+    "y", "z", "~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
+    "/"
 ];
 
 function generatePassword(){
@@ -25,6 +26,15 @@ function renderPassword(){
     password2El.textContent = generatePassword();
 }
 
-
+function copyOnClick(id){
+    const text = document.getElementById(id).textContent;
+    if(text.length>0){
+    navigator.clipboard.writeText(text).then(()=>{
+        alert("Copied to Clipboard!");
+    })
+    } else {
+        alert('Please hit "Generate password" button first')
+    }
+}
 
 

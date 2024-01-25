@@ -44,3 +44,7 @@ hr {
     height: 1rem;
     text-align: center;
 }
+
+.password-choice:hover{
+    cursor: pointer;
+}
