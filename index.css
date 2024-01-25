@@ -1,4 +1,43 @@
 body {
     margin: 5rem;
+    background-color: #1F2937;
 }
 
+#line1-heading {
+    color: white;
+}
+
+#line2-heading {
+    color: #10B981;
+}
+
+#description {
+    color: #D5D4D8;
+}
+
+button {
+    background-color: #10B981;
+    color: white;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #6B7280;
+}
+
+#password-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.password-choice {
+    color: #10B981;
+    background-color: #273549;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
